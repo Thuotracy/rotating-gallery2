@@ -22,13 +22,13 @@ body{
 
 @keyframes animate{
     0%{
-        transform: perspective(1000px) rotateY(0deg);
+        transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
     }
 
     100%{
-        transform: perspective(1000px) rotateY(360deg);
+        transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
     }
-}
+} 
 
 .box span{
     position: absolute;
@@ -38,17 +38,13 @@ body{
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004)
+    transform: rotateX(calc(var(--i) * 45deg)) translateZ(400px);
 }
 
 .box span img{
     width: 300px;
     height: 300px;
     object-fit: cover; 
-}
-
-.box span img{
     position: absolute;
     top: 0;
     left: 0; 
